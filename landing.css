@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  background: #111f;
+  color: #fff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Helvetica', 'Roboto', sans-serif;
+  width: 100vw;
+}
+
+#landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  place-content: center;
+  width: 95%;
+  margin-inline: auto;
+}
+
+#landing > * {
+  margin-block: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 0.9;
+  max-width: 50pc;
+}
+
+p {
+  font-size: 1rem;
+  max-width: 30pc;
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  background: var(--primary);
+  border: none;
+  border-radius: 0.15rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+  font-weight: 800;
+}
+
+.button-2 {
+  background: var(--secondary);
+  color: black;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+  margin: 2rem;
+
+  border-radius: 0.25rem;
+}
+
+special {
+  color: #2af;
+  background: transparent;
+}
